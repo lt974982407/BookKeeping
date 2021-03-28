@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.bookkeeping.MultiLineRadioGroup
+        android:id="@+id/outcome_select1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/outcome11"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/classify_traffic"
+            android:text="出行"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/outcome12"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/classify_eat"
+            android:text="饮食"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/outcome13"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_cloth"
+            android:button="@null"
+            android:text="衣服"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/outcome14"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_edu"
+            android:button="@null"
+            android:text="教育"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/outcome15"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_game"
+            android:button="@null"
+            android:text="游戏"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/outcome16"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_fruit"
+            android:button="@null"
+            android:text="水果"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/outcome17"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_doctor"
+            android:button="@null"
+            android:text="医疗"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/outcome18"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_other"
+            android:button="@null"
+            android:text="其他"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+
+
+    </com.example.bookkeeping.MultiLineRadioGroup>
+
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/hhh"
+     android:text="hhh"/>
+
+
+</LinearLayout>

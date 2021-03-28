@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DashBoardView">
+        <attr name="amount" format="float"></attr>
+    </declare-styleable>
+</resources>

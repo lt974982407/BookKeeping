@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".regisiter">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="175dp"
+        android:src="@drawable/ico"/>
+
+    <EditText
+        android:id="@+id/edit_username_reg"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_background"
+        android:hint="账号"
+        android:lines="1"
+        android:layout_marginTop="200dp"
+        android:drawableLeft="@drawable/login1"
+        android:layout_marginStart="110dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_password_reg"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_background"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:layout_marginTop="275dp"
+        android:drawableLeft="@drawable/password"
+        android:layout_marginStart="110dp"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/edit_password_reg2"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_background"
+        android:hint="确认密码"
+        android:inputType="textPassword"
+        android:layout_marginTop="350dp"
+        android:drawableLeft="@drawable/password"
+        android:layout_marginStart="110dp"
+        android:maxLines="1"/>
+
+    <ImageButton
+        android:id="@+id/button_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_marginTop="430dp"
+        android:layout_marginStart="250dp"
+        android:src="@drawable/queding5"/>
+
+    <ImageButton
+        android:id="@+id/button_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_marginTop="425dp"
+        android:layout_marginStart="115dp"
+        android:src="@drawable/returnx5"/>
+
+</RelativeLayout>

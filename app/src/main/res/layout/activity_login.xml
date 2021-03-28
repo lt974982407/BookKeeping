@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/traceroute_rootview"
+    android:clickable="true"
+    android:windowSoftInputMode="adjustResize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="175dp"
+        android:src="@drawable/ico"/>
+
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_background"
+        android:hint="账号"
+        android:lines="1"
+        android:layout_marginTop="200dp"
+        android:drawableLeft="@drawable/login1"
+        android:layout_marginStart="110dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_background"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:layout_marginTop="300dp"
+        android:drawableLeft="@drawable/password"
+        android:layout_marginStart="110dp"
+        android:maxLines="1"/>
+
+    <ImageButton
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="250dp"
+        android:src="@drawable/login2"/>
+
+    <ImageButton
+        android:id="@+id/button_regisiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="115dp"
+        android:src="@drawable/register"/>
+
+</RelativeLayout>

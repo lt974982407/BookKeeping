@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+    <RadioGroup
+        android:id="@+id/select_time"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:checkedButton="@id/select_week">
+
+        <RadioButton
+            android:id="@+id/select_week"
+            style="@style/RadioButton"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radiobutton_left_select"
+            android:textColor="@drawable/radiobutton_text_select"
+            android:text="周"/>
+
+        <RadioButton
+            android:id="@+id/select_month"
+            style="@style/RadioButton"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radiobutton_mid_select"
+            android:textColor="@drawable/radiobutton_text_select"
+            android:text="月"/>
+
+        <RadioButton
+            android:id="@+id/select_year"
+            style="@style/RadioButton"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radiobutton_right_select"
+            android:textColor="@drawable/radiobutton_text_select"
+            android:text="年"/>
+
+    </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+
+        <ImageButton
+            android:id="@+id/date_picker"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerInside"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/cal1"/>
+
+        <ImageButton
+            android:id="@+id/add_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:scaleType="centerInside"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/add3"/>
+
+
+        <TextView
+            android:id="@+id/date_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorTextWhite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/show_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/amout"
+            android:text="结余￥1200"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="30sp"/>
+        
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="收支"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/account"/>
+
+
+        <TextView
+            android:id="@+id/inout_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:text="收入    ￥1200"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/inout_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="25dp"
+            android:text="支出    ￥725"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="收入"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/income"/>
+
+
+        <TextView
+            android:id="@+id/in_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:text="收入    ￥1200"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/in_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="25dp"
+            android:text="支出    ￥725"/>
+
+        <TextView
+            android:id="@+id/in_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="50dp"
+            android:text="支出    ￥725"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="支出"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/outcome"/>
+
+
+        <TextView
+            android:id="@+id/out_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:text="收入    ￥1200"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/out_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="25dp"
+            android:text="支出    ￥725"/>
+
+        <TextView
+            android:id="@+id/out_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="50dp"
+            android:text="支出    ￥725"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

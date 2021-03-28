@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+        <RadioGroup
+            android:id="@+id/select_inout2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:checkedButton="@id/select_in2">
+
+            <RadioButton
+                android:id="@+id/select_out2"
+                style="@style/RadioButton"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radiobutton_left_select"
+                android:textColor="@drawable/radiobutton_text_select"
+                android:text="支出"/>
+
+
+            <RadioButton
+                android:id="@+id/select_in2"
+                style="@style/RadioButton"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radiobutton_right_select"
+                android:textColor="@drawable/radiobutton_text_select"
+                android:text="收入"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/add_hint2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/classify_income_wage"/>
+
+        <TextView
+            android:id="@+id/inputValue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff5363"
+            android:layout_gravity="right"
+            android:layout_marginTop="-40dp"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <com.example.bookkeeping.MultiLineRadioGroup
+        android:id="@+id/income_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/income1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/classify_income_wage"
+            android:text="工资"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/income2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/classify_income_jiangjin"
+            android:text="奖金"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/income3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_income_baoxiao"
+            android:button="@null"
+            android:text="报销"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/income4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_income_jianzhi"
+            android:button="@null"
+            android:text="兼职"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/income5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_income_redpacket"
+            android:button="@null"
+            android:text="红包"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/income6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_income_stock"
+            android:button="@null"
+            android:text="股票"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/income7"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_income_gift"
+            android:button="@null"
+            android:text="礼物"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/income8"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_other"
+            android:button="@null"
+            android:text="其他"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+
+
+    </com.example.bookkeeping.MultiLineRadioGroup>
+
+    <EditText
+        android:id="@+id/description_in"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textSize="20dp"
+        android:hint="备注：说点什么吧~"
+        android:maxLines="1"
+        android:layout_marginStart="55dp"/>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/keyboard_select"
+        android:id="@+id/gridView2"
+        android:layout_centerInParent="true"
+        android:numColumns="4"/>
+
+</LinearLayout>

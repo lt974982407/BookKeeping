@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".add_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+        <RadioGroup
+            android:id="@+id/select_inout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:checkedButton="@id/select_out">
+
+            <RadioButton
+                android:id="@+id/select_out"
+                style="@style/RadioButton"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radiobutton_left_select"
+                android:textColor="@drawable/radiobutton_text_select"
+                android:text="支出"/>
+
+
+            <RadioButton
+                android:id="@+id/select_in"
+                style="@style/RadioButton"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radiobutton_right_select"
+                android:textColor="@drawable/radiobutton_text_select"
+                android:text="收入"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/add_hint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/classify_traffic"/>
+
+        <TextView
+            android:id="@+id/inputValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff5363"
+            android:layout_gravity="right"
+            android:layout_marginTop="-40dp"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <com.example.bookkeeping.MultiLineRadioGroup
+        android:id="@+id/outcome_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/outcome1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/classify_traffic"
+            android:text="出行"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/outcome2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/classify_eat"
+            android:text="饮食"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/outcome3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_cloth"
+            android:button="@null"
+            android:text="衣服"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/outcome4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_edu"
+            android:button="@null"
+            android:text="教育"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/outcome5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_game"
+            android:button="@null"
+            android:text="游戏"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/outcome6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_fruit"
+            android:button="@null"
+            android:text="水果"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/outcome7"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_doctor"
+            android:button="@null"
+            android:text="医疗"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/outcome8"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/classify_other"
+            android:button="@null"
+            android:text="其他"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </com.example.bookkeeping.MultiLineRadioGroup>
+
+
+    <EditText
+        android:id="@+id/description_out"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textSize="20dp"
+        android:hint="备注：说点什么吧~"
+        android:maxLines="1"
+        android:layout_marginStart="55dp"/>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/keyboard_select"
+        android:id="@+id/gridView"
+        android:layout_centerInParent="true"
+        android:numColumns="4"/>
+
+</LinearLayout>
