@@ -4,7 +4,7 @@ A naive app for Bookkeeping.
 
 # Preview
 
-<img src="https://github.com/lt974982407/BookKeeping/blob/master/pic/login.png" style="zoom:75%;" /><img src="\https://github.com/lt974982407/BookKeeping/blob/master/pic/regisiter.png" alt="login" style="zoom:75%;" />
+<img src="https://github.com/lt974982407/BookKeeping/blob/master/pic/login.png" style="zoom:75%;" /><img src="https://github.com/lt974982407/BookKeeping/blob/master/pic/regisiter.png" alt="login" style="zoom:75%;" />
 
 
 
